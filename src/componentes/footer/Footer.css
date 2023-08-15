@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+ }
+footer{
+    display: flex;
+    background-color: lightpink;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20vw;
+    bottom: 0px;
+    position: fixed;
+}    
+footer div{
+    display: flex;
+    gap: 50px;
+}
+footer ul{
+    list-style: none;
+}
+footer ul h1{
+    display: flex;
+    list-style: none;
+    color: white;
+}
+
+
+footer ul li a{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+.logo{
+    color: rgb(240, 0, 80);;
+    font-size: 30px;
+    margin-right: 90px;
+    
+}
