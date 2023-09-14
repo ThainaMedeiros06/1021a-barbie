@@ -20,7 +20,7 @@ export default function Main(){
               },
               {
                      id:2,  
-                     titulo:'Barbie',
+                     titulo:'ken',
                      sinopse:'Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.',
                      imagem:'/KEN.png'
               },
@@ -46,8 +46,11 @@ export default function Main(){
             }
         </div>
         {/** use algo do vetor para tentar criar os filmes */}
+        {
+              filmes.filter((filme)=>filme.titulo.toLowerCase().includes(texto)).map((filme)=><Filme key={filme.id} sinopse={filme.sinopse} titulo={filme.titulo} imagem={filme.imagem}/>)
+        }
         <main className="content-main">
-            <Filme titulo='Barbie'
+            {/*<Filme titulo='Barbie'
                    sinopse='Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.'
                    imagem='/barbie.png'/>
             <Filme titulo='Barbie'
@@ -70,7 +73,7 @@ export default function Main(){
                    imagem='/barbie.png'/>
             <Filme titulo='Barbie'
                    sinopse='Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.'
-                   imagem='/barbie.png'/>
+                   imagem='/barbie.png'/>*/}
         </main>
         </>
     )
