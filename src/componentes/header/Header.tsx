@@ -1,5 +1,5 @@
 import './Hearder.css'
-import Link from './../link/Link'
+import LinkNav from '../linknav/LinkNav'
 function Header(){
     return(
         <header>
@@ -9,16 +9,16 @@ function Header(){
             <nav>
                 <ul>
                     <li>
-                        <Link texto='Home'/>
+                        <LinkNav url="/" texto='Home'/>
                     </li>
                     <li>
-                        <Link texto='Notícia'/>
+                        <LinkNav url="/Noticía" texto='Notícia'/>
                     </li>
                     <li>
-                        <Link texto='Sobre'/>
+                        <LinkNav url="/Sobre" texto='Sobre'/>
                     </li>
                     <li>
-                        <Link texto='Contato'/>
+                        <LinkNav url="/Contato" texto='Contato'/>
                     </li>
                 </ul>
             </nav>
